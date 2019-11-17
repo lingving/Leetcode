@@ -57,6 +57,24 @@ public class Chapter1 {
         return stack1.size()==1;
     }
 
+
+    public static boolean isValidThird(String s) {
+        char[] stack = new char[s.length() + 1];
+        int top = 1;
+        for (char c : s.toCharArray()) {
+            if (c == '(' || c == '[' || c == '{') {
+                stack[top++] = c;
+            } else if (c == ')' && stack[--top] != '(') {
+                return false;
+            } else if (c == ']' && stack[--top] != '[') {
+                return false;
+            } else if (c == '}' && stack[--top] != '{') {
+                return false;
+            }
+        }
+        return top == 1;
+    }
+
     public static void main(String[] args){
          String s = "{[]}";
          System.out.println("result :"+isValidSec(s));
