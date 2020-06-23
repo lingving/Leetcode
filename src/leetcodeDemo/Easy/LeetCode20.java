@@ -9,7 +9,7 @@ import java.util.Stack;
  * @author: lingving
  * @create: 2019-11-14 21:26
  **/
-public class leetcode20 {
+public class LeetCode20 {
 
 
     /**
