@@ -1,4 +1,4 @@
-package leetcodeDemo.Easy;
+package leetcodeDemo;
 
 /**
  * @program: Leetcode
