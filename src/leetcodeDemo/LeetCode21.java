@@ -10,7 +10,7 @@ public class LeetCode21 {
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         ListNode listNode = new ListNode(0);// 初始化头结点
         ListNode listNode1 = listNode;//以l1为合并后的链表
-        while(l1 !=null && l2!=null){
+        while(l1 != null && l2 != null){
             if(l1.val > l2.val){
                 listNode1.next = l2;
                 listNode1 = listNode1.next;
