@@ -26,6 +26,7 @@ public class Jz03 {
         for (int num : nums) {
             if (!set.add(num)) {
                 repeat = num;
+
                 break;
             }
         }
