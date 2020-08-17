@@ -1,6 +1,7 @@
 package JianZhiOffer;
 
 
+
 /**
  * @program: Leetcode
  * @description: 从尾到头打印链表
@@ -13,8 +14,16 @@ public class Jz06 {
         int count = 0;
         while (cur != null){
             cur = cur.next;
-            count
+            count++;
         }
+        cur = head;
+        int[] nums = new int[count];
+
+        for (int i = count - 1; i >= 0; --i) {
+            nums[i] = cur.val;
+            cur = cur.next;
+        }
+        return nums;
 
     }
 }

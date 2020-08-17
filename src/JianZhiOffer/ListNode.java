@@ -1,4 +1,4 @@
-package leetcodeDemo;
+package JianZhiOffer;
 
 /**
  * @program: Leetcode
